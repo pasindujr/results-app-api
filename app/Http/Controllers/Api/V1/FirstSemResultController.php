@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Requests\StoreFourthSemResultRequest;
-use App\Http\Requests\UpdateFourthSemResultRequest;
-use App\Models\FourthSemResult;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreFirstSemResultRequest;
+use App\Http\Requests\UpdateFirstSemResultRequest;
+use App\Models\FirstSemResult;
 
-class FourthSemResultController extends Controller
+class FirstSemResultController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +32,10 @@ class FourthSemResultController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreFourthSemResultRequest  $request
+     * @param  \App\Http\Requests\StoreFirstSemResultRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreFourthSemResultRequest $request)
+    public function store(StoreFirstSemResultRequest $request)
     {
         //
     }
@@ -42,10 +43,10 @@ class FourthSemResultController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\FourthSemResult  $fourthSemResult
+     * @param  \App\Models\FirstSemResult  $firstSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(FourthSemResult $fourthSemResult)
+    public function show(FirstSemResult $firstSemResult)
     {
         //
     }
@@ -53,10 +54,10 @@ class FourthSemResultController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\FourthSemResult  $fourthSemResult
+     * @param  \App\Models\FirstSemResult  $firstSemResult
      * @return \Illuminate\Http\Response
      */
-    public function edit(FourthSemResult $fourthSemResult)
+    public function edit(FirstSemResult $firstSemResult)
     {
         //
     }
@@ -64,11 +65,11 @@ class FourthSemResultController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateFourthSemResultRequest  $request
-     * @param  \App\Models\FourthSemResult  $fourthSemResult
+     * @param  \App\Http\Requests\UpdateFirstSemResultRequest  $request
+     * @param  \App\Models\FirstSemResult  $firstSemResult
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateFourthSemResultRequest $request, FourthSemResult $fourthSemResult)
+    public function update(UpdateFirstSemResultRequest $request, FirstSemResult $firstSemResult)
     {
         //
     }
@@ -76,10 +77,10 @@ class FourthSemResultController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\FourthSemResult  $fourthSemResult
+     * @param  \App\Models\FirstSemResult  $firstSemResult
      * @return \Illuminate\Http\Response
      */
-    public function destroy(FourthSemResult $fourthSemResult)
+    public function destroy(FirstSemResult $firstSemResult)
     {
         //
     }

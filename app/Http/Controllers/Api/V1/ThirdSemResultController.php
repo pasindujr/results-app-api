@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Requests\StoreForthSemResultRequest;
-use App\Http\Requests\UpdateForthSemResultRequest;
-use App\Models\ForthSemResult;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreThirdSemResultRequest;
+use App\Http\Requests\UpdateThirdSemResultRequest;
+use App\Models\ThirdSemResult;
 
-class ForthSemResultController extends Controller
+class ThirdSemResultController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +32,10 @@ class ForthSemResultController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreForthSemResultRequest  $request
+     * @param  \App\Http\Requests\StoreThirdSemResultRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreForthSemResultRequest $request)
+    public function store(StoreThirdSemResultRequest $request)
     {
         //
     }
@@ -42,10 +43,10 @@ class ForthSemResultController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\ThirdSemResult  $thirdSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(ForthSemResult $forthSemResult)
+    public function show(ThirdSemResult $thirdSemResult)
     {
         //
     }
@@ -53,10 +54,10 @@ class ForthSemResultController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\ThirdSemResult  $thirdSemResult
      * @return \Illuminate\Http\Response
      */
-    public function edit(ForthSemResult $forthSemResult)
+    public function edit(ThirdSemResult $thirdSemResult)
     {
         //
     }
@@ -64,11 +65,11 @@ class ForthSemResultController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateForthSemResultRequest  $request
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Http\Requests\UpdateThirdSemResultRequest  $request
+     * @param  \App\Models\ThirdSemResult  $thirdSemResult
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateForthSemResultRequest $request, ForthSemResult $forthSemResult)
+    public function update(UpdateThirdSemResultRequest $request, ThirdSemResult $thirdSemResult)
     {
         //
     }
@@ -76,10 +77,10 @@ class ForthSemResultController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\ThirdSemResult  $thirdSemResult
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ForthSemResult $forthSemResult)
+    public function destroy(ThirdSemResult $thirdSemResult)
     {
         //
     }
