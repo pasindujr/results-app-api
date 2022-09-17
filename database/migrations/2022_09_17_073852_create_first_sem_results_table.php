@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('first_sem_results', function (Blueprint $table) {
             $table->id();
+            $table->integer('student_id');
+            $table->string('personal_computer_application');
+            $table->string('computer_hardware');
+            $table->string('structured_programming');
+            $table->string('data_representation_and_organization');
+            $table->string('database_management_system');
+            $table->string('web_development');
+            $table->string('mathematics_for_computing');
+            $table->string('english_for_technology_1');
             $table->timestamps();
         });
     }

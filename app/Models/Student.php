@@ -21,7 +21,7 @@ class Student extends Model
         return $this->hasOne(ThirdSemResult::class);
     }
 
-    public function foruthSemResults() {
-        return $this->hasOne(ThirdSemResult::class);
+    public function fourthSemResults() {
+        return $this->hasOne(FourthSemResult::class);
     }
 }
