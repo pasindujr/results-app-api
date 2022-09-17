@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('forth_sem_results', function (Blueprint $table) {
+        Schema::create('fourth_sem_results', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('forth_sem_results');
+        Schema::dropIfExists('fourth_sem_results');
     }
 };

@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\ForthSemResult;
+use App\Models\FourthSemResult;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class ForthSemResultPolicy
+class FourthSemResultPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class ForthSemResultPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, ForthSemResult $forthSemResult)
+    public function view(User $user, FourthSemResult $fourthSemResult)
     {
         //
     }
@@ -48,10 +48,10 @@ class ForthSemResultPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, ForthSemResult $forthSemResult)
+    public function update(User $user, FourthSemResult $fourthSemResult)
     {
         //
     }
@@ -60,10 +60,10 @@ class ForthSemResultPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, ForthSemResult $forthSemResult)
+    public function delete(User $user, FourthSemResult $fourthSemResult)
     {
         //
     }
@@ -72,10 +72,10 @@ class ForthSemResultPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, ForthSemResult $forthSemResult)
+    public function restore(User $user, FourthSemResult $fourthSemResult)
     {
         //
     }
@@ -84,10 +84,10 @@ class ForthSemResultPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\ForthSemResult  $forthSemResult
+     * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, ForthSemResult $forthSemResult)
+    public function forceDelete(User $user, FourthSemResult $fourthSemResult)
     {
         //
     }
