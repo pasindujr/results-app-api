@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Filters\V1\StudentFilter;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreStudentRequest;
 use App\Http\Requests\UpdateStudentRequest;
@@ -9,7 +10,6 @@ use App\Http\Resources\V1\StudentCollection;
 use App\Http\Resources\V1\StudentResource;
 use App\Models\Student;
 use Illuminate\Http\Request;
-use App\Services\V1\StudentQuery;
 
 class StudentController extends Controller
 {
@@ -20,7 +20,7 @@ class StudentController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new StudentQuery();
+        $filter = new StudentFilter();
         $queryItems = $filter->transform($request);
 
         if (count($queryItems) == 0) {

@@ -1,22 +1,17 @@
 <?php
 
-namespace App\Services\V1;
+namespace App\Filters;
 
 use Illuminate\Http\Request;
 
-class StudentQuery
+class ApiFilter
 {
-    protected $allowedParms = [
-        'gpa' => ['eq', 'gt', 'lt']
-    ];
 
-    protected $operatorMap = [
-        'eq' => '=',
-        'lt' => '<',
-        'lte' => '<=',
-        'gt' => '>',
-        'gte' => '>='
-    ];
+    protected $allowedParms = [];
+
+    protected $columnMap = [];
+
+    protected $operatorMap = [];
 
     public function transform(Request $request)
     {
