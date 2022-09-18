@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreThirdSemResultRequest;
 use App\Http\Requests\UpdateThirdSemResultRequest;
+use App\Http\Resources\V1\ThirdSemResult\ThirdSemResultCollection;
+use App\Http\Resources\V1\ThirdSemResult\ThirdSemResultResource;
 use App\Models\ThirdSemResult;
 
 class ThirdSemResultController extends Controller
@@ -16,7 +18,7 @@ class ThirdSemResultController extends Controller
      */
     public function index()
     {
-        //
+        return new ThirdSemResultCollection(ThirdSemResult::all());
     }
 
     /**
@@ -46,9 +48,9 @@ class ThirdSemResultController extends Controller
      * @param  \App\Models\ThirdSemResult  $thirdSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(ThirdSemResult $thirdSemResult)
+    public function show(ThirdSemResult $thirdsemresult)
     {
-        //
+        return new ThirdSemResultResource($thirdsemresult);
     }
 
     /**

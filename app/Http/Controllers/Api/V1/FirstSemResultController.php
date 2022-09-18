@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreFirstSemResultRequest;
 use App\Http\Requests\UpdateFirstSemResultRequest;
+use App\Http\Resources\V1\FirstSemResult\FirstSemResultCollection;
+use App\Http\Resources\V1\FirstSemResult\FirstSemResultResource;
 use App\Models\FirstSemResult;
 
 class FirstSemResultController extends Controller
@@ -16,7 +18,7 @@ class FirstSemResultController extends Controller
      */
     public function index()
     {
-        //
+        return new FirstSemResultCollection(FirstSemResult::all());
     }
 
     /**
@@ -46,9 +48,9 @@ class FirstSemResultController extends Controller
      * @param  \App\Models\FirstSemResult  $firstSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(FirstSemResult $firstSemResult)
+    public function show(FirstSemResult $firstsemresult)
     {
-        //
+        return new FirstSemResultResource($firstsemresult);
     }
 
     /**

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSecondSemResultRequest;
 use App\Http\Requests\UpdateSecondSemResultRequest;
+use App\Http\Resources\V1\SecondSemResult\SecondSemResultCollection;
+use App\Http\Resources\V1\SecondSemResult\SecondSemResultResource;
 use App\Models\SecondSemResult;
 
 class SecondSemResultController extends Controller
@@ -16,7 +18,7 @@ class SecondSemResultController extends Controller
      */
     public function index()
     {
-        //
+        return new SecondSemResultCollection(SecondSemResult::all());
     }
 
     /**
@@ -46,9 +48,9 @@ class SecondSemResultController extends Controller
      * @param  \App\Models\SecondSemResult  $secondSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(SecondSemResult $secondSemResult)
+    public function show(SecondSemResult $secondsemresult)
     {
-        //
+        return new SecondSemResultResource($secondsemresult);
     }
 
     /**

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreFourthSemResultRequest;
 use App\Http\Requests\UpdateFourthSemResultRequest;
+use App\Http\Resources\V1\FourthSemResult\FourthSemResultCollection;
+use App\Http\Resources\V1\FourthSemResult\FourthSemResultResource;
 use App\Models\FourthSemResult;
 
 class FourthSemResultController extends Controller
@@ -16,7 +18,7 @@ class FourthSemResultController extends Controller
      */
     public function index()
     {
-        //
+        return new FourthSemResultCollection(FourthSemResult::all());
     }
 
     /**
@@ -46,9 +48,9 @@ class FourthSemResultController extends Controller
      * @param  \App\Models\FourthSemResult  $fourthSemResult
      * @return \Illuminate\Http\Response
      */
-    public function show(FourthSemResult $fourthSemResult)
+    public function show(FourthSemResult $fourthsemresult)
     {
-        //
+        return new FourthSemResultResource($fourthsemresult);
     }
 
     /**
