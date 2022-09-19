@@ -421,35 +421,35 @@
                         </a>Endpoints
                     </h2>
                     <ul dir="auto">
-                        <li><a href="http://127.0.0.1:8000/api/v1/students" rel="nofollow">https://results-api.pasindujr.me/api/v1/students</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/students" rel="nofollow">https://results-api.pasindujr.me/api/v1/students</a>
                             - Outputs all the student data.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/students/45" rel="nofollow">hhttps://results-api.pasindujr.me/api/v1/students/45</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/students/45" rel="nofollow">hhttps://results-api.pasindujr.me/api/v1/students/45</a>
                             - Outputs single data of a student based on the Id.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/firstsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/firstsemresults</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/firstsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/firstsemresults</a>
                             - Outputs all the results of first semester.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/firstsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/firstsemresults/45</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/firstsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/firstsemresults/45</a>
                             - Outputs specific student's first semester results based on their Id.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/secondsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/secondsemresults</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/secondsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/secondsemresults</a>
                             - Outputs all the results of second semester.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/secondsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/secondsemresults/45</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/secondsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/secondsemresults/45</a>
                             - Outputs specific student's second semester results based on their
                             Id.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/thirdsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/thirdsemresults</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/thirdsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/thirdsemresults</a>
                             - Outputs all the results of third semester.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/thirdsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/thirdsemresults/45</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/thirdsemresults/45" rel="nofollow">https://results-api.pasindujr.me/api/v1/thirdsemresults/45</a>
                             - Outputs specific student's third semester results based on their Id.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/fourthsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/fourthsemresults</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/fourthsemresults" rel="nofollow">https://results-api.pasindujr.me/api/v1/fourthsemresults</a>
                             - Outputs all the results of fourth semester.
                         </li>
-                        <li><a href="http://127.0.0.1:8000/api/v1/fourthsemresults/45" rel="nofollow">https://results-api.pasindujr.me//api/v1/fourthsemresults/45</a>
+                        <li><a href="https://results-api.pasindujr.me/api/v1/fourthsemresults/45" rel="nofollow">https://results-api.pasindujr.me//api/v1/fourthsemresults/45</a>
                             - Outputs specific student's fourth semester results based on their
                             Id.
                         </li>
