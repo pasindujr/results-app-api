@@ -26,7 +26,7 @@ This is a simple API for get students data and relevant results on each semester
 * http://127.0.0.1:8000/api/v1/fourthsemresults/45 - Outputs specific student's fourth semester results based on their
   Id.
 
-## Supported query parameters
+## Supported Query Parameters
 
 Students can be filtered based on their GPA.
 
